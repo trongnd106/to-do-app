@@ -1,0 +1,30 @@
+{
+  "annotations": {
+    "changelogDate": "20241103164203"
+  },
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "birthDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "Author",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "book",
+      "otherEntityRelationshipName": "author",
+      "relationshipName": "book",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "no"
+}
